@@ -1,11 +1,11 @@
-# XDDraw
+# XDChart
 用贝塞尔曲线在一个view上绘制柱状图、折线图，柱状图支持大量数据滚动，支持分组单组，性能极高。
 ## 安装
 
 利用CocoaPods进行安装
 
 ```ruby
-pod 'XDDraw'
+pod 'XDChart'
 ```
 ## 作者
 XD, lxd2020nba@163.com
