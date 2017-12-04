@@ -40,4 +40,4 @@ XD, lxd2020nba@163.com
     [self.view addSubview:drawChatView];
 ```
 ## 效果图
-![Image text](https://raw.githubusercontent.com/liuxiaodongLXD/XDDraw/master/images/demo.png)
+![Image text](https://raw.githubusercontent.com/liuxiaodongLXD/XDChart/master/images/demo.png)
