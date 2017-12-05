@@ -1,6 +1,6 @@
 //
 //  ViewController.m
-//  测试画图demo
+//  示例Demo
 //
 //  Created by apple on 2017/11/23.
 //  Copyright © 2017年 lxd. All rights reserved.

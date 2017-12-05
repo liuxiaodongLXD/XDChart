@@ -61,18 +61,6 @@
      }
      return _brokenLineColor;
 }
-- (UIColor *)histogramColor{
-     if (_histogramColor == nil) {
-          _histogramColor = XDHistogramColor;
-     }
-     return _histogramColor;
-}
-- (UIColor *)histogramTextColor{
-     if (_histogramTextColor == nil) {
-          _histogramTextColor = XDHistogramColor;
-     }
-     return _histogramTextColor;
-}
 //static CABasicAnimation* fadeAnimation(){
 //     CABasicAnimation* fadeAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
 //     fadeAnimation.fromValue = [NSNumber numberWithFloat:0.0];
@@ -169,25 +157,27 @@
                [self.layer addSublayer:shapeLine];
                //把Polyline的路径赋予shapeLine
                shapeLine.path = Polyline.CGPath;
-               
-               //开始添加动画
-               [CATransaction begin];
-               //创建一个strokeEnd路径的动画
-               CABasicAnimation *pathAnimation2 = [CABasicAnimation animationWithKeyPath:@"opacity"];
-               //动画时间
-               pathAnimation2.duration = 4.5;
-               //添加动画样式
-               pathAnimation2.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-               //动画起点
-               pathAnimation2.fromValue = @0.0f;
-               //动画停止位置
-               pathAnimation2.toValue = @1.0f;
-               //把动画添加到CAShapeLayer
-               [shapeLine addAnimation:pathAnimation2 forKey:@"strokeEndAnimation"];
-               //动画终点
-               shapeLine.strokeEnd = 1.0;
-               //结束动画
-               [CATransaction commit];
+              // 是否要加动画效果
+              if (self.isNeedAnima) {
+                  //开始添加动画
+                  [CATransaction begin];
+                  //创建一个strokeEnd路径的动画
+                  CABasicAnimation *pathAnimation2 = [CABasicAnimation animationWithKeyPath:@"opacity"];
+                  //动画时间
+                  pathAnimation2.duration = self.duration;
+                  //添加动画样式
+                  pathAnimation2.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+                  //动画起点
+                  pathAnimation2.fromValue = @0.0f;
+                  //动画停止位置
+                  pathAnimation2.toValue = @1.0f;
+                  //把动画添加到CAShapeLayer
+                  [shapeLine addAnimation:pathAnimation2 forKey:@"strokeEndAnimation"];
+                  //动画终点
+                  shapeLine.strokeEnd = 1.0;
+                  //结束动画
+                  [CATransaction commit];
+              }
           }
           
           }
@@ -247,16 +237,17 @@
      shapelayer.fillColor = [[UIColor clearColor]CGColor];
      shapelayer.path = bezierPath.CGPath;
      [self.layer addSublayer:shapelayer];
+    
      // 添加动画
-     CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
-     pathAnimation.duration = 4.5;
-     pathAnimation.fromValue = @0;
-     pathAnimation.toValue = @1;
-     pathAnimation.autoreverses = NO;
-     [shapelayer addAnimation:pathAnimation forKey:@"strokeEndAnimation"];
-
+    if (self.isNeedAnima) {
+        CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
+        pathAnimation.duration = self.duration;
+        pathAnimation.fromValue = @0;
+        pathAnimation.toValue = @1;
+        pathAnimation.autoreverses = NO;
+        [shapelayer addAnimation:pathAnimation forKey:@"strokeEndAnimation"];
+    }
 }
-
 
 //- (CATextLayer *)textLayer{
 //     if (!_textLayer) {
@@ -279,78 +270,4 @@
 //- (void)setBarText:(NSString*)text{
 //     self.textLayer.string = text;
 //}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//     for (NSInteger i = 0; i < self.histogramValueArray.count; i++) {
-//          float max = [[self.histogramValueArray valueForKeyPath:@"@max.floatValue"] floatValue];
-//          CGFloat x = i * self.groupWidth + self.chartMargin.left;
-//          CGFloat y = self.frame.size.height - (((self.frame.size.height - self.chartMargin.bottom - self.chartMargin.top) * [self.histogramValueArray[i] floatValue]) / max) - self.chartMargin.bottom;
-//          NSLog(@"柱子的y = %f",y);
-//          // 画柱子上的字
-//          NSMutableParagraphStyle *paragraph=[[NSMutableParagraphStyle alloc]init];
-//          paragraph.alignment=NSTextAlignmentCenter; // 居中
-//          NSMutableDictionary *attrDict = [NSMutableDictionary dictionary];
-//          attrDict[NSFontAttributeName] = [UIFont systemFontOfSize:9];
-//          attrDict[NSParagraphStyleAttributeName] = paragraph;
-//          attrDict[NSForegroundColorAttributeName] = self.histogramTextColor;
-//          // 画柱子上的字
-//          CGRect titleRect = CGRectMake(x - self.groupWidth * 0.5,y - 10,self.groupWidth,20);
-//          [[self.histogramValueArray[i] stringValue] drawInRect:titleRect withAttributes:attrDict];
-//
-//          // 画柱状图
-//          UIBezierPath *Polyline = [UIBezierPath bezierPath];
-//          //设置起点
-//          [Polyline moveToPoint:CGPointMake(x, self.frame.size.height - self.chartMargin.bottom)];
-//          //设置终点
-//          [Polyline addLineToPoint:CGPointMake(x,y)];
-//
-//          //添加CAShapeLayer
-//          CAShapeLayer *shapeLine = [[CAShapeLayer alloc] init];
-//          //设置颜色
-//          shapeLine.strokeColor = self.histogramColor.CGColor;
-//          //设置宽度
-//          shapeLine.lineWidth = self.polyWidth;
-//          //把CAShapeLayer添加到当前视图CAShapeLayer
-//          [self.layer addSublayer:shapeLine];
-//          //把Polyline的路径赋予shapeLine
-//          shapeLine.path = Polyline.CGPath;
-//
-//          //开始添加动画
-//          [CATransaction begin];
-//          //创建一个strokeEnd路径的动画
-//          CABasicAnimation *pathAnimation2 = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
-//          //动画时间
-//          pathAnimation2.duration = 5.0;
-//          //添加动画样式
-//          pathAnimation2.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-//          //动画起点
-//          pathAnimation2.fromValue = @0.0f;
-//          //动画停止位置
-//          pathAnimation2.toValue   = @1.0f;
-//          //把动画添加到CAShapeLayer
-//          [shapeLine addAnimation:pathAnimation2 forKey:@"strokeEndAnimation"];
-//          //动画终点
-//          shapeLine.strokeEnd = 1.0;
-//          //结束动画
-//          [CATransaction commit];
-//     }
-
-     // 画折线图
-//     if (self.yValue.count) {
-//          [self drawLineChart];
-//     }
-//}
-
 @end
