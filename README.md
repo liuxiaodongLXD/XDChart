@@ -8,7 +8,7 @@
 pod 'XDChart'
 ```
 ## 作者
-XD, lxd2020nba@163.com
+XD, lxd2020nba@163.com，微信号：liudong775
 ## 使用方法
 ```
     // 1.创建
