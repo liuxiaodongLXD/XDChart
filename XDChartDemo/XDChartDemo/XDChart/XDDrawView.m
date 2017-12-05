@@ -248,6 +248,7 @@
         [shapelayer addAnimation:pathAnimation forKey:@"strokeEndAnimation"];
     }
 }
+
 //- (CATextLayer *)textLayer{
 //     if (!_textLayer) {
 //          _textLayer = [CATextLayer layer];
