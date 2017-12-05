@@ -19,7 +19,7 @@ XD, lxd2020nba@163.com
     // 2.1 设置柱子的宽度
     drawChatView.polyWidth = 15;
     // 2.2 设置动画时间(不设置默认时间2秒)
-//    drawChatView.duration = 5.0;
+    // drawChatView.duration = 5.0;
     // 2.3 设置是否需要动画效果
     drawChatView.isNeedAnima = YES;
     // 3.创建每一组的数据模型
@@ -40,7 +40,7 @@ XD, lxd2020nba@163.com
     data.xLabels = @[@"钢丝帘线",@"光缆丝",@"胎圈",@"中丝",@"胶管钢丝线",@"直拉",@"大拉",@"大直拉"];
     // 6.折线数组（为空即不画折线）
     drawChatView.lineValueArray = [NSMutableArray arrayWithArray:@[@100,@90,@90,@190,@200,@110,@190,@200]];
-//    drawChatView.isCurve = YES;
+    // drawChatView.isCurve = YES;
     // 6.1 折线的宽度
     drawChatView.lineWidth = 2;
     // 7.展示出来
