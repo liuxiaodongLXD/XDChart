@@ -47,6 +47,13 @@
     }
     return _polyWidth;
 }
+// 默认动画时间设置2秒
+- (CGFloat)duration{
+    if (_duration == 0) {
+        _duration = 2;
+    }
+    return _duration;
+}
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -81,12 +88,12 @@
     [dView setGrWidth:groWidth];
     [dView setBrokenLineColor:self.brokenLineColor];
     [dView setBrokenLineTextColor:self.brokenLineTextColor];
-    [dView setHistogramColor:self.histogramColor];
-    [dView setHistogramTextColor:self.histogramTextColor];
     [dView setChartMargin:self.chartMargin];
     [dView setIsCurve:self.isCurve];
     [dView setLineWidth:self.lineWidth];
     [dView setData:self.data];
+    [dView setDuration:self.duration];
+    [dView setIsNeedAnima:self.isNeedAnima];
     [dView setLineValueArray:self.lineValueArray];
     [_scrollView addSubview:dView];
     _scrollView.contentSize = dView.frame.size;
@@ -106,6 +113,11 @@
     }
 }
 
+/**
+ 画图例的get方法
+
+ @return 图例view
+ */
 - (XDLegendView *)legendView{
     if (!_legendView) {
         self.legendViewScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 30)];

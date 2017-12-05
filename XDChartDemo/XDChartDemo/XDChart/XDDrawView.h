@@ -18,14 +18,14 @@
 @property (nonatomic, strong) UIColor *brokenLineColor;
 /** 折线上文字的颜色 */
 @property (nonatomic, strong) UIColor *brokenLineTextColor;
-/** 柱子上文字的颜色 */
-@property (nonatomic, strong) UIColor *histogramTextColor;
-/** 柱子的颜色 */
-@property (nonatomic, strong) UIColor *histogramColor;
 /** 是否要画曲线 */
 @property (nonatomic, assign) BOOL isCurve;
 /** 折线的粗细 */
 @property (nonatomic, assign) CGFloat lineWidth;
+/** 动画时间 */
+@property (nonatomic, assign) CGFloat duration;
+/** 是否需要动画效果 */
+@property (nonatomic, assign) BOOL isNeedAnima;
 
 @property (nonatomic, strong) XDDrawData *data;
 /** 折线数组 */

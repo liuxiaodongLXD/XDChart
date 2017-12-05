@@ -19,15 +19,17 @@ typedef NS_ENUM(NSInteger, LegendAlignment) {
 };
 @class XDLewLegendViewData;
 @interface XDLegendView : UIView
-@property (nonatomic, assign)LegendAlignment alignment;
+@property (nonatomic, assign) LegendAlignment alignment;
 // 图例整体的宽度
 @property (nonatomic, assign) CGFloat textWidth;
-@property (nonatomic, strong)NSArray<XDLewLegendViewData *> *data;
+@property (nonatomic, strong) NSArray<XDLewLegendViewData *> *data;
 
 - (instancetype)initWithData:(NSArray<XDLewLegendViewData *> *)data;
 @end
 
 @interface XDLewLegendViewData : NSObject
-@property (nonatomic, strong)NSString *label;
-@property (nonatomic, strong)UIColor *color;
+// 图例文字
+@property (nonatomic, strong) NSString *label;
+// 图例上方块的颜色
+@property (nonatomic, strong) UIColor *color;
 @end
