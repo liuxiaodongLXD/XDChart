@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = 'XDChart'
-s.version      = '0.0.3'
+s.version      = '0.0.4'
 s.summary      = '绘制柱状图、折线图'
 s.homepage     = 'https://github.com/liuxiaodongLXD/XDChart'
 s.license      = 'MIT'
