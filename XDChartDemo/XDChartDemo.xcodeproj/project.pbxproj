@@ -8,36 +8,57 @@
 
 /* Begin PBXBuildFile section */
 		1840C46C1FD52E0C00D32058 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1840C46B1FD52E0C00D32058 /* AppDelegate.m */; };
-		1840C46F1FD52E0C00D32058 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1840C46E1FD52E0C00D32058 /* ViewController.m */; };
 		1840C4721FD52E0C00D32058 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1840C4701FD52E0C00D32058 /* Main.storyboard */; };
 		1840C4741FD52E0C00D32058 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1840C4731FD52E0C00D32058 /* Assets.xcassets */; };
 		1840C4771FD52E0C00D32058 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1840C4751FD52E0C00D32058 /* LaunchScreen.storyboard */; };
 		1840C47A1FD52E0C00D32058 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1840C4791FD52E0C00D32058 /* main.m */; };
-		1840C4951FD52EE000D32058 /* XDLegendView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1840C48D1FD52EE000D32058 /* XDLegendView.m */; };
-		1840C4961FD52EE000D32058 /* XDDrawChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1840C48F1FD52EE000D32058 /* XDDrawChatView.m */; };
-		1840C4971FD52EE000D32058 /* XDDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1840C4931FD52EE000D32058 /* XDDrawView.m */; };
-		1840C4981FD52EE000D32058 /* XDDrawData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1840C4941FD52EE000D32058 /* XDDrawData.m */; };
+		184F57A1207D9C8C00F01636 /* XDDrawChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184F579A207D9C8B00F01636 /* XDDrawChatView.m */; };
+		184F57A2207D9C8C00F01636 /* XDDrawData.m in Sources */ = {isa = PBXBuildFile; fileRef = 184F579C207D9C8B00F01636 /* XDDrawData.m */; };
+		184F57A3207D9C8C00F01636 /* XDDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184F579E207D9C8B00F01636 /* XDDrawView.m */; };
+		184F57A4207D9C8C00F01636 /* XDLegendView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184F57A0207D9C8B00F01636 /* XDLegendView.m */; };
+		184F57A7207DAEB400F01636 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184F57A6207DAEB400F01636 /* MainController.m */; };
+		184F57AB207DB18100F01636 /* Test1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184F57AA207DB18100F01636 /* Test1ViewController.m */; };
+		184F57AE207DB42100F01636 /* Test2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184F57AD207DB42100F01636 /* Test2ViewController.m */; };
+		184F57B1207DB4D600F01636 /* Test3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184F57B0207DB4D600F01636 /* Test3ViewController.m */; };
+		184F57B4207DB57500F01636 /* Test4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184F57B3207DB57500F01636 /* Test4ViewController.m */; };
+		184F57B7207DB5F700F01636 /* Test5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184F57B6207DB5F700F01636 /* Test5ViewController.m */; };
+		184F57BA207DB6E200F01636 /* Test6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184F57B9207DB6E200F01636 /* Test6ViewController.m */; };
+		184F57BD207DB84800F01636 /* Test7ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184F57BC207DB84800F01636 /* Test7ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1840C4671FD52E0C00D32058 /* XDChartDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XDChartDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1840C46A1FD52E0C00D32058 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1840C46B1FD52E0C00D32058 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1840C46D1FD52E0C00D32058 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1840C46E1FD52E0C00D32058 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1840C4711FD52E0C00D32058 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1840C4731FD52E0C00D32058 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1840C4761FD52E0C00D32058 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1840C4781FD52E0C00D32058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1840C4791FD52E0C00D32058 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1840C48D1FD52EE000D32058 /* XDLegendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDLegendView.m; sourceTree = "<group>"; };
-		1840C48E1FD52EE000D32058 /* XDLegendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDLegendView.h; sourceTree = "<group>"; };
-		1840C48F1FD52EE000D32058 /* XDDrawChatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDDrawChatView.m; sourceTree = "<group>"; };
-		1840C4901FD52EE000D32058 /* XDDrawChatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDDrawChatView.h; sourceTree = "<group>"; };
-		1840C4911FD52EE000D32058 /* XDDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDDrawView.h; sourceTree = "<group>"; };
-		1840C4921FD52EE000D32058 /* XDDrawData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDDrawData.h; sourceTree = "<group>"; };
-		1840C4931FD52EE000D32058 /* XDDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDDrawView.m; sourceTree = "<group>"; };
-		1840C4941FD52EE000D32058 /* XDDrawData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDDrawData.m; sourceTree = "<group>"; };
+		184F5799207D9C8B00F01636 /* XDDrawChatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDDrawChatView.h; sourceTree = "<group>"; };
+		184F579A207D9C8B00F01636 /* XDDrawChatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDDrawChatView.m; sourceTree = "<group>"; };
+		184F579B207D9C8B00F01636 /* XDDrawData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDDrawData.h; sourceTree = "<group>"; };
+		184F579C207D9C8B00F01636 /* XDDrawData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDDrawData.m; sourceTree = "<group>"; };
+		184F579D207D9C8B00F01636 /* XDDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDDrawView.h; sourceTree = "<group>"; };
+		184F579E207D9C8B00F01636 /* XDDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDDrawView.m; sourceTree = "<group>"; };
+		184F579F207D9C8B00F01636 /* XDLegendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDLegendView.h; sourceTree = "<group>"; };
+		184F57A0207D9C8B00F01636 /* XDLegendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDLegendView.m; sourceTree = "<group>"; };
+		184F57A5207DAEB400F01636 /* MainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
+		184F57A6207DAEB400F01636 /* MainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
+		184F57A9207DB18100F01636 /* Test1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test1ViewController.h; sourceTree = "<group>"; };
+		184F57AA207DB18100F01636 /* Test1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test1ViewController.m; sourceTree = "<group>"; };
+		184F57AC207DB42100F01636 /* Test2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test2ViewController.h; sourceTree = "<group>"; };
+		184F57AD207DB42100F01636 /* Test2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test2ViewController.m; sourceTree = "<group>"; };
+		184F57AF207DB4D600F01636 /* Test3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test3ViewController.h; sourceTree = "<group>"; };
+		184F57B0207DB4D600F01636 /* Test3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test3ViewController.m; sourceTree = "<group>"; };
+		184F57B2207DB57500F01636 /* Test4ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test4ViewController.h; sourceTree = "<group>"; };
+		184F57B3207DB57500F01636 /* Test4ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test4ViewController.m; sourceTree = "<group>"; };
+		184F57B5207DB5F700F01636 /* Test5ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test5ViewController.h; sourceTree = "<group>"; };
+		184F57B6207DB5F700F01636 /* Test5ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test5ViewController.m; sourceTree = "<group>"; };
+		184F57B8207DB6E200F01636 /* Test6ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test6ViewController.h; sourceTree = "<group>"; };
+		184F57B9207DB6E200F01636 /* Test6ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test6ViewController.m; sourceTree = "<group>"; };
+		184F57BB207DB84800F01636 /* Test7ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test7ViewController.h; sourceTree = "<group>"; };
+		184F57BC207DB84800F01636 /* Test7ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test7ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,11 +91,12 @@
 		1840C4691FD52E0C00D32058 /* XDChartDemo */ = {
 			isa = PBXGroup;
 			children = (
-				1840C4801FD52E7800D32058 /* XDChart */,
+				184F57A5207DAEB400F01636 /* MainController.h */,
+				184F57A6207DAEB400F01636 /* MainController.m */,
+				184F57A8207DB15D00F01636 /* Demo */,
+				184F5798207D9C8B00F01636 /* XDChart */,
 				1840C46A1FD52E0C00D32058 /* AppDelegate.h */,
 				1840C46B1FD52E0C00D32058 /* AppDelegate.m */,
-				1840C46D1FD52E0C00D32058 /* ViewController.h */,
-				1840C46E1FD52E0C00D32058 /* ViewController.m */,
 				1840C4701FD52E0C00D32058 /* Main.storyboard */,
 				1840C4731FD52E0C00D32058 /* Assets.xcassets */,
 				1840C4751FD52E0C00D32058 /* LaunchScreen.storyboard */,
@@ -84,19 +106,40 @@
 			path = XDChartDemo;
 			sourceTree = "<group>";
 		};
-		1840C4801FD52E7800D32058 /* XDChart */ = {
+		184F5798207D9C8B00F01636 /* XDChart */ = {
 			isa = PBXGroup;
 			children = (
-				1840C4901FD52EE000D32058 /* XDDrawChatView.h */,
-				1840C48F1FD52EE000D32058 /* XDDrawChatView.m */,
-				1840C4921FD52EE000D32058 /* XDDrawData.h */,
-				1840C4941FD52EE000D32058 /* XDDrawData.m */,
-				1840C4911FD52EE000D32058 /* XDDrawView.h */,
-				1840C4931FD52EE000D32058 /* XDDrawView.m */,
-				1840C48E1FD52EE000D32058 /* XDLegendView.h */,
-				1840C48D1FD52EE000D32058 /* XDLegendView.m */,
+				184F5799207D9C8B00F01636 /* XDDrawChatView.h */,
+				184F579A207D9C8B00F01636 /* XDDrawChatView.m */,
+				184F579B207D9C8B00F01636 /* XDDrawData.h */,
+				184F579C207D9C8B00F01636 /* XDDrawData.m */,
+				184F579D207D9C8B00F01636 /* XDDrawView.h */,
+				184F579E207D9C8B00F01636 /* XDDrawView.m */,
+				184F579F207D9C8B00F01636 /* XDLegendView.h */,
+				184F57A0207D9C8B00F01636 /* XDLegendView.m */,
 			);
 			path = XDChart;
+			sourceTree = "<group>";
+		};
+		184F57A8207DB15D00F01636 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				184F57A9207DB18100F01636 /* Test1ViewController.h */,
+				184F57AA207DB18100F01636 /* Test1ViewController.m */,
+				184F57AC207DB42100F01636 /* Test2ViewController.h */,
+				184F57AD207DB42100F01636 /* Test2ViewController.m */,
+				184F57AF207DB4D600F01636 /* Test3ViewController.h */,
+				184F57B0207DB4D600F01636 /* Test3ViewController.m */,
+				184F57B2207DB57500F01636 /* Test4ViewController.h */,
+				184F57B3207DB57500F01636 /* Test4ViewController.m */,
+				184F57B5207DB5F700F01636 /* Test5ViewController.h */,
+				184F57B6207DB5F700F01636 /* Test5ViewController.m */,
+				184F57B8207DB6E200F01636 /* Test6ViewController.h */,
+				184F57B9207DB6E200F01636 /* Test6ViewController.m */,
+				184F57BB207DB84800F01636 /* Test7ViewController.h */,
+				184F57BC207DB84800F01636 /* Test7ViewController.m */,
+			);
+			path = Demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,13 +213,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1840C4981FD52EE000D32058 /* XDDrawData.m in Sources */,
-				1840C46F1FD52E0C00D32058 /* ViewController.m in Sources */,
+				184F57A1207D9C8C00F01636 /* XDDrawChatView.m in Sources */,
+				184F57A4207D9C8C00F01636 /* XDLegendView.m in Sources */,
+				184F57AB207DB18100F01636 /* Test1ViewController.m in Sources */,
+				184F57B1207DB4D600F01636 /* Test3ViewController.m in Sources */,
+				184F57BA207DB6E200F01636 /* Test6ViewController.m in Sources */,
+				184F57A3207D9C8C00F01636 /* XDDrawView.m in Sources */,
+				184F57AE207DB42100F01636 /* Test2ViewController.m in Sources */,
+				184F57B4207DB57500F01636 /* Test4ViewController.m in Sources */,
+				184F57A7207DAEB400F01636 /* MainController.m in Sources */,
+				184F57B7207DB5F700F01636 /* Test5ViewController.m in Sources */,
+				184F57BD207DB84800F01636 /* Test7ViewController.m in Sources */,
+				184F57A2207D9C8C00F01636 /* XDDrawData.m in Sources */,
 				1840C47A1FD52E0C00D32058 /* main.m in Sources */,
-				1840C4971FD52EE000D32058 /* XDDrawView.m in Sources */,
-				1840C4961FD52EE000D32058 /* XDDrawChatView.m in Sources */,
 				1840C46C1FD52E0C00D32058 /* AppDelegate.m in Sources */,
-				1840C4951FD52EE000D32058 /* XDLegendView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

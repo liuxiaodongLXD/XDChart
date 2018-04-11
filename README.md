@@ -1,12 +1,16 @@
 # XDChart
 用贝塞尔曲线在一个view上绘制柱状图、折线图，柱状图支持大量数据滚动，支持分组单组，性能极高。
+## 效果图
+![Image text](https://raw.githubusercontent.com/liuxiaodongLXD/XDChart/master/images/zhengti.gif)
+![Image text](https://raw.githubusercontent.com/liuxiaodongLXD/XDChart/master/images/zuifuzaiqingk.gif)
 ## 安装
 
-利用CocoaPods进行安装
+方法一：利用CocoaPods进行安装
 
 ```ruby
 pod 'XDChart'
 ```
+方法二：直接把XDChart文件夹拖拽到自己的项目中即可
 ## 作者
 XD, lxd2020nba@163.com，微信号：liudong775
 ## 使用方法
@@ -47,5 +51,3 @@ XD, lxd2020nba@163.com，微信号：liudong775
     [drawChatView show];
     [self.view addSubview:drawChatView];
 ```
-## 效果图
-![Image text](https://raw.githubusercontent.com/liuxiaodongLXD/XDChart/master/images/demo.png)
