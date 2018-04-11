@@ -2,7 +2,10 @@
 用贝塞尔曲线在一个view上绘制柱状图、折线图，柱状图支持大量数据滚动，支持分组单组，性能极高。
 ## 效果图
 ![Image text](https://raw.githubusercontent.com/liuxiaodongLXD/XDChart/master/images/zhengti.gif)
+### 柱状图、折线图和上下限
 ![Image text](https://raw.githubusercontent.com/liuxiaodongLXD/XDChart/master/images/zuifuzaiqingk.gif)
+### 单组柱状图
+![Image text](https://raw.githubusercontent.com/liuxiaodongLXD/XDChart/master/images/danzhu.gif)
 ## 安装
 
 方法一：利用CocoaPods进行安装
